@@ -1,19 +1,19 @@
 body {
-  background-color: black;
+  background-color: white;
   margin:0; /*removes padding so that navbar goes to edges */
 }
 
 h1 {
-  color: crimson;
+  color: black;
   margin-left: 20px;
 }
 
 p{
-  color: #dc143c;
+  color: black;
   margin-right: 500px;
-
-
 }
+
+
 
 .navbar{
   width: 100%;
@@ -30,10 +30,70 @@ p{
 
 .navbar-link{
   font-size: 1.0em;
+  font-weight: 700;
   padding: 10px;
   margin:10px;
   height: 18px;
   width:9%;
   background-color: #dc143c;
+  color:white;
   text-align: center;
+  transition: all 300ms ease;
 }
+
+.navbar-link:hover{
+  background-color: #f59b9b;
+  cursor: pointer;
+}
+
+.home-page-text{
+  text-align: center;
+  font-size: 1.3em;
+  margin:25px 20% 25px 20%;
+}
+
+.online-order-container{
+  position:relative;
+  width:100%;
+  height:600px;
+}
+
+#order-online-image{
+  width:100%;
+  height:600px;
+}
+
+#order-online-button{
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-decoration: none;
+
+
+
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 20px;
+  margin:10px;
+  height: 18px;
+  width:9%;
+  background-color: #dc143c;
+  color:white;
+  text-align: center;
+  transition: all 300ms ease;
+
+}
+
+#order-online-button:hover{
+  background-color: #f59b9b;
+  padding:25px;
+  cursor: pointer;
+}
+
+
+
+
+
