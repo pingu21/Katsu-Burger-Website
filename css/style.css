@@ -1,3 +1,12 @@
+@font-face{
+  font-family: "Bebas";
+  src: url("../font/Bebas-Regular.woff");
+  font-weight: 100;
+  font-style: normal;
+
+
+}
+
 body {
   background-color: white;
   margin:0; /*removes padding so that navbar goes to edges */
@@ -6,6 +15,9 @@ body {
 h1 {
   color: black;
   margin-left: 20px;
+  font-family: "Bebas",sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 p{
@@ -30,7 +42,9 @@ p{
 
 .navbar-link{
   font-size: 1.0em;
-  font-weight: 700;
+  font-family: "Bebas",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 10px;
   margin:10px;
   height: 18px;
@@ -48,6 +62,7 @@ p{
 
 .home-page-text{
   text-align: center;
+  font-family: "Degular",sans-serif;
   font-size: 1.3em;
   margin:25px 20% 25px 20%;
 }
@@ -73,7 +88,7 @@ p{
   text-decoration: none;
 
 
-
+  font-family: "Bebas",sans-serif;
   font-size: 1.1em;
   font-weight: 700;
   padding: 20px;
