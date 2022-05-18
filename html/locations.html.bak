@@ -21,19 +21,19 @@
   </div>
   <div class = "parent">
 	<div class='child float-left-child'>
-		<h2 class = "location-title">ballard</h1>
+		<h1 class = "location-title">ballard</h1>
 		<p class = "location-info">address:</p>
 		<p class = "location-info">hours:</p>
 		<p class = "location-info">phone number:</p>
 	</div>
 	<div class='child float-left-child'>
-		<h2 class = "location-title">bellevue</h1>
+		<h1 class = "location-title">bellevue</h1>
 		<p class = "location-info">address:</p>
 		<p class = "location-info">hours:</p>
 		<p class = "location-info">phone number:</p>
 	</div>
 	<div class='child float-left-child'>
-		<h2 class = "location-title">bellevue</h1>
+		<h1 class = "location-title">bellevue</h1>
 		<p class = "location-info">address:</p>
 		<p class = "location-info">hours:</p>
 		<p class = "location-info">phone number:</p>
