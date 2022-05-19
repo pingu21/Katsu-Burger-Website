@@ -3,19 +3,18 @@
   src: url("../font/Bebas-Regular.woff");
   font-weight: 100;
   font-style: normal;
-
-
 }
 
 body {
   background-color: white;
   margin:0; /*removes padding so that navbar goes to edges */
+  height: 100%;
 }
 
 h1 {
   color: black;
   margin-left: 20px;
-  font-family: "Bebas",sans-serif;
+  font-family: 'Bebas Neue',sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -40,7 +39,7 @@ p{
 
 .navbar-link{
   font-size: 1.0em;
-  font-family: "Bebas",sans-serif;
+  font-family: 'Bebas Neue',sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 10px;
@@ -58,6 +57,27 @@ p{
   cursor: pointer;
 }
 
+.main-image{
+  background: url(../images/katsu-burger-banner-image.png);
+  background-size: cover;
+  background-position: center center;
+  top:25%;
+  left:25%;
+  height:600px;
+  overflow:hidden;
+}
+
+.order-image-text{
+  color: white;
+  margin-top: 10%;
+  margin:10% auto auto auto;
+  text-align: center;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 8vw;
+}
+
 .home-page-text{
   text-align: center;
   font-family: "Degular",sans-serif;
@@ -65,59 +85,68 @@ p{
   margin:25px 20% 25px 20%;
 }
 
-.online-order-container{
-  position:relative;
-  width:100%;
-  height:600px;
-}
 
 .menu-title{
-  font-family: "Bebas",sans-serif;
+  font-family: 'Bebas Neue',sans-serif;
   font-size: 3em;
   font-weight: 700;
+  margin:auto;
   text-align: center;
+  width:100%
 }
 
 .menu-container{
   display: flex;
   margin:auto;
   padding:0px;
-  height: 600px;
+  height: 200rem;
+  /* background:blue; */
   width:65%;
-  background:rgb(213, 194, 198);
   justify-content: center;
-  align-items:center;
+  align-items:flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
+  
 }
 
 .menu-item{
-  height: 350px;
-  width: 250px;
+  height: 500px;
+  width: 300px;
   margin: 15px;
   padding: 15px;
-  background:red
+  /* background:red; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-#order-online-image{
-  width:100%;
-  height:600px;
+
+.menu-desc{
+  text-align: center;
+  font-family: "Degular",sans-serif;
+  font-size: 1.3em;
+  margin:5px 5px 5px 5px;
 }
+
 
 #order-online-button{
-  position: absolute;
+  position:absolute;
   margin: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 10px;
 
   text-decoration: none;
-  font-family: "Bebas",sans-serif;
-  font-size: 1.1em;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2em;
   font-weight: 700;
   padding: 20px;
   margin:10px;
   height: 18px;
-  width:9%;
+  min-width: 160px;
   background-color: #dc143c;
   color:white;
   text-align: center;
@@ -130,6 +159,99 @@ p{
   padding:25px;
   cursor: pointer;
 }
+
+#tokyo-classic-image{
+  background: url(../images/tokyo-classic.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+
+}
+
+#godzilla-attack-image{
+  background: url(../images/godzilla-attack.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#ninja-deluxe-image{
+  background: url(../images/ninja-deluxe.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#katsu-curry-image{
+  background: url(../images/katsu-curry.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#honey-miso-tofu-image{
+  background: url(../images/honey-miso-tofu.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#ohayou-gozaimasu-image{
+  background: url(../images/ohayou-gozaimasu.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#samurai-select-image{
+  background: url(../images/samurai-select.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#wabi-wasabi-image{
+  background: url(../images/wabi-wasabi.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#teriyaki-chicken-image{
+  background: url(../images/teriyaki-chicken.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#tokyo-tower-image{
+  background: url(../images/tokyo-tower.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+#mt-fuji-image{
+  background: url(../images/mt.fuji.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+
+
+
 
 
 
