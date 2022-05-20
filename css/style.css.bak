@@ -8,10 +8,6 @@ h1 {
   margin-left: 20px;
 }
 
-h2 {
-	color: black;
-}
-
 p{
   color: black;
   margin-right: 500px;
@@ -62,6 +58,20 @@ p{
   height:600px;
 }
 
+.location-box{
+	background: red;
+	padding: 1rem;
+}
+
+.location-title{
+	text-align: left;
+	font-size: 1.4em;
+}
+
+.location-info{
+	text-align: left;
+	font-size: 1.3em;
+}
 
 .float-left-child {
   float: left;
