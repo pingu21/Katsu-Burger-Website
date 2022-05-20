@@ -90,7 +90,7 @@ p{
   font-family: 'Bebas Neue',sans-serif;
   font-size: 3em;
   font-weight: 700;
-  margin:auto;
+  margin:10px auto;
   text-align: center;
   width:100%
 }
@@ -99,8 +99,6 @@ p{
   display: flex;
   margin:auto;
   padding:0px;
-  height: 200rem;
-  /* background:blue; */
   width:65%;
   justify-content: center;
   align-items:flex-start;
@@ -114,7 +112,18 @@ p{
   width: 300px;
   margin: 15px;
   padding: 15px;
-  /* background:red; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.menu-item-fries{
+  height: 400px;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -128,6 +137,32 @@ p{
   font-family: "Degular",sans-serif;
   font-size: 1.3em;
   margin:5px 5px 5px 5px;
+}
+
+.customer-review-container{
+  display:flex;
+  width:100vw;
+  background:#dc143c;
+}
+
+.review-item{
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: cadetblue;
+}
+
+.review-text{
+  text-align: center;
+  font-family: "Degular",sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin:5px 5px 5px 5px;
+
+
 }
 
 
@@ -166,6 +201,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 
 }
 
@@ -175,6 +212,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #ninja-deluxe-image{
@@ -183,6 +222,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #katsu-curry-image{
@@ -191,6 +232,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #honey-miso-tofu-image{
@@ -199,6 +242,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #ohayou-gozaimasu-image{
@@ -207,6 +252,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #samurai-select-image{
@@ -215,6 +262,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #wabi-wasabi-image{
@@ -223,6 +272,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #teriyaki-chicken-image{
@@ -231,6 +282,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #tokyo-tower-image{
@@ -239,6 +292,8 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
 
 #mt-fuji-image{
@@ -247,7 +302,103 @@ p{
   background-size: cover;
   width: 100%;
   height: 300px;
+  min-width: 300px;
+  background-position: center center;
 }
+
+#sea-salt-fries-image{
+  background: url(../images/sea-salt-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#nori-fries-image{
+  background: url(../images/nori-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+#curry-fries-image{
+  background: url(../images/curry-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+#spice-fries-image{
+  background: url(../images/12-spice-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#banzai-bites-image{
+  background: url(../images/banzai-bites.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+
+#korokke-image{
+  background: url(../images/korokke.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#seaweed-salad-image{
+  background: url(../images/seaweed-salad.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#wasabi-coleslaw-image{
+  background: url(../images/wasabi-coleslaw.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#riley-p-image{
+  background: url(../images/tokyo-classic.png);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
+
 
 
 
