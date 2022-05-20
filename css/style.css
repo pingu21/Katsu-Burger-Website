@@ -24,8 +24,6 @@ p{
   margin-right: 500px;
 }
 
-
-
 .navbar{
   width: 100%;
   margin:0px;
@@ -131,6 +129,23 @@ p{
   justify-content: flex-start;
 }
 
+.flex-row {
+  display: flex;
+  text-align: center;
+}
+
+
+.flex-title {
+  flex: 1;
+  font-size: 1.0em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.flex-info {
+  flex: 1;
+  padding:10px;
+}
 
 .menu-desc{
   text-align: center;
