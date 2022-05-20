@@ -8,16 +8,10 @@ h1 {
   margin-left: 20px;
 }
 
-h2 {
-	color: black;
-}
-
 p{
   color: black;
   margin-right: 500px;
 }
-
-
 
 .navbar{
   width: 100%;
@@ -63,8 +57,26 @@ p{
 }
 
 
-.float-left-child {
-  float: left;
+.flex-row {
+  display: flex;
+  text-align: center;
+}
+
+.flex-title {
+  flex: 1;
+  padding:10px;
+}
+
+.flex-title {
+  flex: 1;
+  font-size: 1.0em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.flex-info {
+  flex: 1;
+  padding:10px;
 }
 
 
