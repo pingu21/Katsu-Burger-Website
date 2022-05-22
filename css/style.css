@@ -157,7 +157,7 @@ p{
 .customer-review-container{
   display:flex;
   width:100vw;
-  background:#dc143c;
+  height: 30rem;
   justify-content: center;
 }
 
@@ -189,6 +189,19 @@ p{
   margin:5px 20px 5px 20px;
 }
 
+.footer-container{
+  display:flex;
+  margin:auto;
+  background: url(../images/godzilla-footer.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:30rem;
+}
+
 
 #order-online-button{
   position:absolute;
@@ -196,7 +209,7 @@ p{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  line-height: 10px;
+  line-height: 25px;
 
   text-decoration: none;
   font-family: 'Bebas Neue',sans-serif;
@@ -446,6 +459,76 @@ p{
   /* border: 5px solid #dc143c; */
   border-radius: 50%;
 }
+
+#menu-order-online-button{
+  margin: auto;
+  line-height: 25px;
+  flex-basis: 100%;
+
+
+  text-decoration: none;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 20px;
+  height: 18px;
+  min-width: 160px;
+  background-color: #dc143c;
+  color:white;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+#menu-order-online-button:hover{
+  background-color: #f59b9b;
+  padding:25px;
+  cursor: pointer;
+}
+
+#facebook-icon{
+  background: url(../images/facebook-circle.svg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+
+
+}
+
+#instagram-icon{
+  background: url(../images/instagram.svg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
+#twitter-icon{
+  background: url(../images/twitter-circle.svg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+
+
+}
+
+
 
 
 
