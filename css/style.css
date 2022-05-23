@@ -1,11 +1,22 @@
+@font-face{
+  font-family: "Bebas";
+  src: url("../font/Bebas-Regular.woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   background-color: white;
   margin:0; /*removes padding so that navbar goes to edges */
+  height: 100%;
 }
 
 h1 {
   color: black;
   margin-left: 20px;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 p{
@@ -21,14 +32,14 @@ p{
   background: #C4C4C4;
   display: flex;
   justify-content: flex-end;
-  align-items:center;
-  
-  
+  align-items:center; 
 }
 
 .navbar-link{
   font-size: 1.0em;
-  font-weight: 700;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 10px;
   margin:10px;
   height: 18px;
@@ -44,17 +55,44 @@ p{
   cursor: pointer;
 }
 
+.main-image{
+  background: url(../images/katsu-burger-banner-image.png);
+  background-size: cover;
+  background-position: center center;
+  top:25%;
+  left:25%;
+  height:600px;
+  overflow:hidden;
+}
+
+.order-image-text{
+  color: white;
+  margin-top: 10%;
+  margin:10% auto auto auto;
+  text-align: center;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 8vw;
+}
+
 .home-page-text{
   text-align: center;
+  font-family: "Degular",sans-serif;
   font-size: 1.3em;
   margin:25px 20% 25px 20%;
 }
 
-.online-order-container{
-  position:relative;
-  width:100%;
-  height:600px;
+
+.menu-title{
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  margin:10px auto;
+  text-align: center;
+  width:100%
 }
+
 
 .center-map{
   display: block;
@@ -62,6 +100,44 @@ p{
   margin-right: auto;
   width: 60%;
 }
+
+.menu-container{
+  display: flex;
+  margin:auto;
+  padding:0px;
+  width:65%;
+  justify-content: center;
+  align-items:flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  
+}
+
+.menu-item{
+  height: 500px;
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.menu-item-fries{
+  height: 400px;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
 .flex-row {
   display: flex;
   text-align: center;
@@ -69,7 +145,7 @@ p{
 
 .flex-title {
   flex: 1;
-  font-size: 1.3em;
+  font-size: 1.0em;
   font-weight: 700;
   padding: 10px;
 }
@@ -80,29 +156,56 @@ p{
   font-weight: 500;
 }
 
-
-#order-online-image{
-  width:100%;
-  height:600px;
+.menu-desc{
+  text-align: center;
+  font-family: "Degular",sans-serif;
+  font-size: 1.3em;
+  margin:5px 5px 5px 5px;
 }
 
+.customer-review-container{
+  display:flex;
+  width:100vw;
+  background:#dc143c;
+}
+
+.review-item{
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: cadetblue;
+}
+
+.review-text{
+  text-align: center;
+  font-family: "Degular",sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin:5px 5px 5px 5px;
+
+
+}
+
+
 #order-online-button{
-  position: absolute;
+  position:absolute;
   margin: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 10px;
 
   text-decoration: none;
-
-
-
-  font-size: 1.1em;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2em;
   font-weight: 700;
   padding: 20px;
   margin:10px;
   height: 18px;
-  width:9%;
+  min-width: 160px;
   background-color: #dc143c;
   color:white;
   text-align: center;
@@ -115,6 +218,210 @@ p{
   padding:25px;
   cursor: pointer;
 }
+
+#tokyo-classic-image{
+  background: url(../images/tokyo-classic.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+
+}
+
+#godzilla-attack-image{
+  background: url(../images/godzilla-attack.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#ninja-deluxe-image{
+  background: url(../images/ninja-deluxe.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#katsu-curry-image{
+  background: url(../images/katsu-curry.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#honey-miso-tofu-image{
+  background: url(../images/honey-miso-tofu.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#ohayou-gozaimasu-image{
+  background: url(../images/ohayou-gozaimasu.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#samurai-select-image{
+  background: url(../images/samurai-select.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#wabi-wasabi-image{
+  background: url(../images/wabi-wasabi.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#teriyaki-chicken-image{
+  background: url(../images/teriyaki-chicken.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#tokyo-tower-image{
+  background: url(../images/tokyo-tower.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#mt-fuji-image{
+  background: url(../images/mt.fuji.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#sea-salt-fries-image{
+  background: url(../images/sea-salt-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#nori-fries-image{
+  background: url(../images/nori-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+#curry-fries-image{
+  background: url(../images/curry-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+#spice-fries-image{
+  background: url(../images/12-spice-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#banzai-bites-image{
+  background: url(../images/banzai-bites.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+
+#korokke-image{
+  background: url(../images/korokke.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#seaweed-salad-image{
+  background: url(../images/seaweed-salad.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#wasabi-coleslaw-image{
+  background: url(../images/wasabi-coleslaw.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#riley-p-image{
+  background: url(../images/tokyo-classic.png);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
 
 
 
