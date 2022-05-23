@@ -209,6 +209,22 @@ p{
   width: 100%;
 }
 
+.about-us-content{
+  display: flex;
+  width: 100%;
+  height:50rem;
+  background: red;
+}
+
+.subtitle{
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin:10px auto;
+  text-align: center;
+  width:100% 
+}
+
 
 #order-online-button{
   position:absolute;
@@ -590,6 +606,15 @@ p{
 #back-to-top:hover #back-to-top-text{
   transform:translateY(0.5rem);
   opacity: 100%;
+}
+
+#about-us-title{
+  font-size: 5rem;
+}
+
+#about-us-image{
+  url(../images/about-us-image.png")
+  
 }
 
 
