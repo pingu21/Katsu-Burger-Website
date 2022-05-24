@@ -303,6 +303,11 @@ a{
   margin:3rem;
 }
 
+.contact-us-title{
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
 .contact-info-container{
   display: flex;
   align-items: center;
@@ -755,10 +760,6 @@ a{
   margin-right: 10px;
 }
 
-#contact-us-title{
-  margin-top: 2rem;
-  font-size: 5rem;
-}
 
 #phone-icon{
   background: url(../images/phone-solid.svg);
