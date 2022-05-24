@@ -30,24 +30,44 @@ a{
 
 .navbar{
   width: 100%;
-  margin:0px;
-  padding:0px;
-  height: 64px;
-  background: #C4C4C4;
+  margin:0;
+  padding:0;
+  height: 4rem;
+  background: #dc143c;
   display: flex;
   justify-content: flex-end;
   align-items:center; 
 }
 
+.logo{
+  background: url(../images/katsu-burger-logo-square.png);
+  background-size: cover;
+  background-position: center;
+  width: 10rem;
+  height: 10rem;
+  margin-right:auto;
+  margin-left:5rem;
+  align-self: flex-start;
+  transition: transform ease 300ms;
+  z-index: 1;
+}
+
+.logo:hover{
+  transform: translateY(1rem) ;
+
+}
+
+
 .navbar-link{
-  font-size: 1.0em;
+  font-size: 2rem;
   font-family: 'Bebas Neue',sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 10px;
-  margin:10px;
-  height: 18px;
-  width:9%;
+  line-height: 4rem;
+  vertical-align: middle;
+  height: 4rem;
+  padding-left:1em;
+  padding-right:1em;
   background-color: #dc143c;
   color:white;
   text-align: center;
@@ -58,6 +78,9 @@ a{
   background-color: #f59b9b;
   cursor: pointer;
 }
+
+
+
 
 .main-image{
   background: url(../images/katsu-burger-banner-image.png);
