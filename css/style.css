@@ -131,16 +131,18 @@ p{
 
 .page-title{
   font-family: 'Bebas Neue',sans-serif;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
   margin:10px auto;
   text-align: center;
   width:100%
 }
+
+
 .flex-row {
   display: flex;
   align-items: center;
-  padding-left: 18em;
+  padding-left: 13em;
 }
 
 
@@ -167,7 +169,7 @@ p{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
 }
 
 .menu-desc{
