@@ -3,41 +3,96 @@
 
 
 <head>
-  <meta charset="UTF-8">
-    <meta name = "description" content="Katsu Burger">
-    <meta name = "author" content = "Katsu Burger">
-    <meta name = "keywords" content = "restaurants, Katsu, Burger">
-    <title>Katsu Burger - Deep Fried Burgers</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type ="text/css" href="../css/style.css">
-  </head> 
-</head>
+	<meta charset="UTF-8" >
+		<meta name = "description" content="Katsu Burger">
+		<meta name = "author" content = "Katsu Burger">
+		<meta name = "keywords" content = "restaurants, Katsu, Burger">
+		<title>Katsu Burger - Deep Fried Burgers</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script src="../app/js/script.js"></script>
+		<link rel="stylesheet" type ="text/css" href="../css/style.css">
+		<link rel="stylesheet" href="https://use.typekit.net/pmq3koy.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head> 
 <body>
   <div class = "navbar">
-    <a class = "navbar-link">Menu</a>
-    <a class = "navbar-link">Order</a>
-    <a class = "navbar-link">Locations</a>
-    <a class = "navbar-link">About Us</a>
+		<a class = "logo" href = "../html/index.html"></a>
+		<a class = "navbar-link" href = "../html/index.html#menu-anchor">Menu</a>
+		<a class = "navbar-link" href = "https://www.grubhub.com/restaurant/katsu-burger-6538-4th-ave-s-seattle/1263202">Order</a>
+		<a class = "navbar-link" href = "../html/locations.html">Locations</a>
+		<a class = "navbar-link" href = "../html/about-us.html">About</a>
   </div>
-  <div class = "parent">
-	<div class='child float-left-child'>
-		<h2 class = "location-title">ballard</h1>
-		<p class = "location-info">address:</p>
-		<p class = "location-info">hours:</p>
-		<p class = "location-info">phone number:</p>
+  <h1 class = 'page-title'>LOCATIONS</h1>
+  <div class='flex-row'>
+	<div class='flex-title'>KENT
+		<div class = 'flex-info'>6621 S 211th St. </div>
+		<div class = 'flex-info'>Kent 98032</div>
+		<div class = 'flex-info'>253-886-6635</div>
 	</div>
-	<div class='child float-left-child'>
-		<h2 class = "location-title">bellevue</h1>
-		<p class = "location-info">address:</p>
-		<p class = "location-info">hours:</p>
-		<p class = "location-info">phone number:</p>
+	<div class='flex-title'>LAKE STEVENS
+		<div class = 'flex-info'>512 91st Ave NE</div>
+		<div class = 'flex-info'>Lake Stevens 98258</div>
+		<div class = 'flex-info'>425-320-8825</div>
 	</div>
-	<div class='child float-left-child'>
-		<h2 class = "location-title">bellevue</h1>
-		<p class = "location-info">address:</p>
-		<p class = "location-info">hours:</p>
-		<p class = "location-info">phone number:</p>
+	<div class='flex-title'>EDMONDS
+		<div class = 'flex-info'>22618 Hwy99 Unit 100</div>
+		<div class = 'flex-info'>Edmonds 98026</div>
+		<div class = 'flex-info'>425-921-6981</div>
 	</div>
-  
+  </div>
+</div>
+<div class='flex-row'>
+  <div class='flex-title'>FEDERAL WAY
+	  <div class = 'flex-info'>1096 S 320th St</div>
+	  <div class = 'flex-info'>Federal Way 98003</div>
+	  <div class = 'flex-info'>253-533-3399</div>
+  </div>
+  <div class='flex-title'>GEORGETOWN
+	  <div class = 'flex-info'>6538 4th Ave S</div>
+	  <div class = 'flex-info'>Seattle 98108</div>
+	  <div class = 'flex-info'>206-762-0752</div>
+  </div>
+  <div class='flex-title'>BELLEVUE
+	  <div class = 'flex-info'>12700 SE 38th St.</div>
+	  <div class = 'flex-info'>BELLEVUE 98006</div>
+	  <div class = 'flex-info'>425-971-7228</div>
+  </div>
+</div>
+</div>
+<div class='parent flex-row'>
+  <div class='flex-title'>LYNNWOOD
+	  <div class = 'flex-info'>3333 184th St. SW</div>
+	  <div class = 'flex-info'>Lynnwood 98037</div>
+	  <div class = 'flex-info'>425-622-4500</div>
+  </div>
+  <div class='flex-title'>CAPITOL HILL
+	  <div class = 'flex-info'>1410 12th Ave.</div>
+	  <div class = 'flex-info'>Seattle 98122</div>
+	  <div class = 'flex-info'>206-941-5317</div>
+  </div>
+  <div class='flex-title'>BALLARD
+	  <div class = 'flex-info'>2034 NW 56th St.</div>
+	  <div class = 'flex-info'>Seattle 98107</div>
+	  <div class = 'flex-info'>206-898-5050</div>
+  </div>
+</div>
+
+<img src = "../images/location-map.jpg" alt="map" class="center-map">
+
+
+<div class = "footer">
+    <div class = "footer-container">
+      <div id = "godzilla-image"></div>
+      <a id = "facebook-icon"  href = "https://www.facebook.com/Katsuburger/"></a>
+      <a id = "instagram-icon" href = "https://www.instagram.com/katsuburger/?hl=en"></a>
+      <a id = "twitter-icon" href = "https://twitter.com/KatsuBurger"></a>
+      <div id = "back-to-top" onclick="scrollToTop()">
+        <h1 id = "back-to-top-text">Back To Top</h1>
+      </div>
+      
+    </div>
+</div>
 </body>
 </html>
