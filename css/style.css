@@ -24,6 +24,10 @@ p{
   margin-right: 500px;
 }
 
+a{
+  text-decoration: none;
+}
+
 .navbar{
   width: 100%;
   margin:0px;
@@ -232,6 +236,64 @@ p{
 
 .break {
   width: 100%;
+
+.footer{
+  position:relative;
+  min-width: 100%;
+  min-height: 60rem;
+  bottom: 0;
+}
+.footer-container{
+  display:grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  justify-items: center;
+  margin:auto;
+  width: 30rem;
+  height: 15rem;
+}
+
+.break {
+  width: 100%;
+}
+
+.about-us-content{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.subtitle{
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin:3rem;
+  width:100% 
+}
+
+.about-desc{
+  text-align:left;
+  font-family: "Degular",sans-serif;
+  font-size: 1.3em;
+  margin:3rem;
+}
+
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-type-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer{
+  width: 100%;
+  height:30rem;
 }
 
 
@@ -481,6 +543,7 @@ p{
 
 #jack-m-image{
   background: url(../images/jack-m.jpg);
+
   background-size: cover;
   margin:0 auto .6rem auto;
   /* margin-bottom: 0.6rem; */
@@ -491,6 +554,21 @@ p{
   /* border: 5px solid #dc143c; */
   border-radius: 50%;
 }
+
+
+#jack-m-image{
+  background: url(../images/jack-m.jpg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
 
 #menu-order-online-button{
   margin: auto;
@@ -617,6 +695,53 @@ p{
   opacity: 100%;
 }
 
+
+#about-us-title{
+  font-size: 5rem;
+}
+
+#about-us-image{
+  background:url(../images/about-us-image.png);
+  background-size: cover;
+  width: 50%;
+  height: 50rem;
+}
+
+#about-us-text-box{
+  width: 50%;
+  margin-right: 10px;
+}
+
+#contact-us-title{
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
+#phone-icon{
+  background: url(../images/phone-solid.svg);
+  background-size: cover;
+  height: 3rem;
+  width:3rem;
+  
+}
+
+#email-icon{
+  background: url(../images/envelope-solid.svg);
+  background-size: cover;
+  height: 3rem;
+  width:3rem;
+  
+}
+
+#phone-number{
+  width: auto;
+  margin:.5rem;
+}
+
+#email{
+  width: auto;
+  margin:.5rem;
+}
 
 
 
