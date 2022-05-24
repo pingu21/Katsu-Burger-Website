@@ -156,22 +156,47 @@ a{
   justify-content: flex-start;
 }
 
+.page-title{
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  margin:10px auto;
+  text-align: center;
+  width:100%
+}
+
+
 .flex-row {
   display: flex;
-  text-align: center;
+  align-items: center;
+  padding-left: 13em;
 }
 
 
 .flex-title {
   flex: 1;
-  font-size: 1.0em;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 3em;
   font-weight: 700;
+  margin:10px auto;
   padding: 10px;
+  text-align: left;
 }
 
 .flex-info {
   flex: 1;
-  padding:10px;
+  font-family: "Degular",sans-serif;
+  font-weight: 500;
+  font-size: .5em;
+  padding:4px;
+  text-align: left;
+}
+
+.center-map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .menu-desc{
@@ -216,6 +241,25 @@ a{
   margin:5px 20px 5px 20px;
 }
 
+.footer{
+  position:relative;
+  min-width: 100%;
+  min-height: 40rem;
+  bottom: 0;
+}
+.footer-container{
+  display:grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  justify-items: center;
+  margin:auto;
+  width: 30rem;
+  height: 15rem;
+}
+
+.break {
+  width: 100%;
+}
 .footer{
   position:relative;
   min-width: 100%;
@@ -522,6 +566,7 @@ a{
 
 #jack-m-image{
   background: url(../images/jack-m.jpg);
+
   background-size: cover;
   margin:0 auto .6rem auto;
   /* margin-bottom: 0.6rem; */
@@ -532,6 +577,21 @@ a{
   /* border: 5px solid #dc143c; */
   border-radius: 50%;
 }
+
+
+#jack-m-image{
+  background: url(../images/jack-m.jpg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
 
 #menu-order-online-button{
   margin: auto;
@@ -658,6 +718,7 @@ a{
   opacity: 100%;
 }
 
+
 #about-us-title{
   font-size: 5rem;
 }
@@ -704,7 +765,6 @@ a{
   width: auto;
   margin:.5rem;
 }
-
 
 
 
