@@ -29,14 +29,24 @@ a{
 }
 
 .navbar{
-  width: 100%;
   margin:0;
   padding:0;
+  height: 7rem;
+  background: #dc143c;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+.navbar-menu{
   height: 4rem;
   background: #dc143c;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items:center; 
+  padding:0;
+  margin:0;
 }
 
 .logo{
@@ -60,18 +70,78 @@ a{
 
 }
 
+.hamburger{
+  background: url(../images/menu.svg);
+  display:none;
+  background-size: cover;
+  height: 3rem;
+  width:3rem;
+  cursor:pointer;
+  border:0;
+  margin:5px;
+
+}
+
+.hamburger:focus{
+  outline:none;
+}
+
+@media screen and (max-width: 767px){
+  .navbar-menu{
+    display:none;
+    width:100%;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  .navbar-menu.show{
+    display:flex;
+  }
+
+  .hamburger.show{
+    background: url(../images/x.svg);
+    background-size:cover;
+
+  }
+
+
+  .logo{
+    background:url(../images/katsu-burger-no-text.png);
+    background-size: cover;
+    width:4rem;
+    height: 4rem;
+    margin-left: 0;
+  }
+
+  .hamburger{
+    display: block;
+  }
+  .navbar-link{
+    width:100%;
+  }
+
+  .order-image-text{
+    transform: translateY(8rem);
+    z-index: 1;
+  }
+
+
+}
+
+
+
 
 
 .navbar-link{
   font-size: 2rem;
   font-family: 'Bebas Neue',sans-serif;
   font-weight: 400;
+  display: inline-block;
   font-style: normal;
   line-height: 4rem;
   vertical-align: middle;
   height: 4rem;
-  padding-left:1em;
-  padding-right:1em;
+  padding:0 20px;
   background-color: #dc143c;
   color:white;
   text-align: center;
@@ -98,7 +168,6 @@ a{
 
 .order-image-text{
   color: white;
-  margin-top: 10%;
   margin:10% auto auto auto;
   text-align: center;
   font-family: 'Bebas Neue',sans-serif;
@@ -342,6 +411,8 @@ a{
   width: 100%;
   height:30rem;
 }
+
+
 
 #order-online-button{
   position:absolute;
