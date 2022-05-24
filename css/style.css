@@ -51,7 +51,7 @@ a{
   transition: transform ease 300ms;
   z-index: 1;
 
-
+}
 .logo:hover{
   transform: translateY(1rem) ;
 
@@ -811,7 +811,9 @@ a{
 .error-button{
   background-color: #dc143c;
   font-size: 1em;
-  padding: 15x;
+  padding: 10px;
+  color: white;
+  transition:all 300ms ease;
 
 }
 
