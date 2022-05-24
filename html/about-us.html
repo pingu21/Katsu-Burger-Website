@@ -10,7 +10,6 @@
     <title>Katsu Burger - Deep Fried Burgers</title>
     <link rel="icon" type="image/x-icon" href="/images/faviconkatsuburger.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="../app/js/script.js"></script>
     <link rel="stylesheet" type ="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pmq3koy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,17 +22,19 @@
 
   <div class = "navbar">
     <a class = "logo" href = "../html/index.html"></a>
-    <a class = "navbar-link" href = "../html/index.html#menu-anchor">Menu</a>
-    <a class = "navbar-link" href = "https://www.grubhub.com/restaurant/katsu-burger-6538-4th-ave-s-seattle/1263202">Order</a>
-    <a class = "navbar-link" href = "../html/locations.html">Locations</a>
-    <a class = "navbar-link" href = "../html/about-us.html">About</a>
+    <button class = "hamburger" id = "hamburger"></button>
+    <div class = "navbar-menu" id = "navbar-menu">
+      <a class = "navbar-link" href = "../html/index.html#menu-anchor">Menu</a>
+      <a class = "navbar-link" href = "https://www.grubhub.com/restaurant/katsu-burger-6538-4th-ave-s-seattle/1263202">Order</a>
+      <a class = "navbar-link" href = "../html/locations.html">Locations</a>
+      <a class = "navbar-link" href = "../html/about-us.html">About</a>
+    </div>
   </div>
   <h1 class = "menu-title" id = "about-us-title">ABOUT US</h1>
   
   <div class = "about-us-content">
     <div id = "about-us-text-box">
-      <h1 class = "subtitle">Inspired Japanese Fusion. Honest Ingredients.
-        Fried to Perfection.
+      <h1 class = "subtitle">Inspired Japanese Fusion. Honest Ingredients. Fried to Perfection.
       </h1>
       <p class = "about-desc">Thank you for taking the time to check us out.  We've passed simplicity and entered into delicious, we know you'll feel the same.  Seattle is our home and as such we couldn't create just a normal burger joint.  Lucky for you, you’ll never have to deal with another season and serve kind of place again.  
         Japanese fusion with Katsu means hand-formed, miso seasoned, Japanese breaded, American sized, and American fried goodness.  Take a bite, crunch into the golden brown crisp, and experience real tenderness.  That's Katsu.  The love, and work behind the scenes.  That's the Katsu team.  You'll find the items on our menu deliver the taste of Japan, 
@@ -80,4 +81,5 @@
       
     </div>
   </div>
+  <script src="../app/js/script.js"></script>
 </body>

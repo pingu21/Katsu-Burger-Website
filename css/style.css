@@ -103,14 +103,13 @@ a{
     background-size:cover;
 
   }
-
-
   .logo{
     background:url(../images/katsu-burger-no-text.png);
     background-size: cover;
-    width:4rem;
-    height: 4rem;
-    margin-left: 0;
+    width:5rem;
+    height: 5rem;
+    margin-left: 10px;
+    margin-top:15px;
   }
 
   .hamburger{
@@ -127,6 +126,9 @@ a{
     -moz-transform: translateY(8rem);
     z-index: 1;
   }
+
+
+  
 }
 
 
@@ -240,21 +242,24 @@ a{
 }
 
 
-.flex-row {
-  display: flex;
-  align-items: center;
-  padding-left: 13em;
+.location-grid{
+  display: grid;
+  grid-template-columns:  30% 30% 30%;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
 }
 
 
 .flex-title {
   flex: 1;
   font-family: 'Bebas Neue',sans-serif;
-  font-size: 3em;
+  font-size: 5vw;
   font-weight: 700;
-  margin:10px auto;
+  margin:30px 30px;
   padding: 10px;
   text-align: left;
+  width:100rem;
 }
 
 .flex-info {
@@ -830,6 +835,7 @@ a{
 #about-us-image{
   background:url(../images/about-us-image.png);
   background-size: cover;
+  background-position: center;
   width: 50%;
   height: 50rem;
 }

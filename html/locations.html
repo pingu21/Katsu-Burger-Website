@@ -10,7 +10,6 @@
 		<title>Katsu Burger - Deep Fried Burgers</title>
 		<link rel="icon" type="image/x-icon" href="/images/faviconkatsuburger.ico">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<script src="../app/js/script.js"></script>
 		<link rel="stylesheet" type ="text/css" href="../css/style.css">
 		<link rel="stylesheet" href="https://use.typekit.net/pmq3koy.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,65 +18,64 @@
 </head> 
 <body>
   <div class = "navbar">
-		<a class = "logo" href = "../html/index.html"></a>
-		<a class = "navbar-link" href = "../html/index.html#menu-anchor">Menu</a>
-		<a class = "navbar-link" href = "https://www.grubhub.com/restaurant/katsu-burger-6538-4th-ave-s-seattle/1263202">Order</a>
-		<a class = "navbar-link" href = "../html/locations.html">Locations</a>
-		<a class = "navbar-link" href = "../html/about-us.html">About</a>
+    <a class = "logo" href = "../html/index.html"></a>
+    <button class = "hamburger" id = "hamburger"></button>
+    <div class = "navbar-menu" id = "navbar-menu">
+      <a class = "navbar-link" href="../html/index.html#menu-anchor">Menu</a>
+      <a class = "navbar-link" href = "https://www.grubhub.com/restaurant/katsu-burger-6538-4th-ave-s-seattle/1263202">Order</a>
+      <a class = "navbar-link" href = "../html/locations.html">Locations</a>
+      <a class = "navbar-link" href = "../html/about-us.html">About</a>
+    </div>
   </div>
   <h1 class = 'page-title'>LOCATIONS</h1>
-  <div class='flex-row'>
-	<div class='flex-title'>KENT
-		<div class = 'flex-info'>6621 S 211th St. </div>
-		<div class = 'flex-info'>Kent 98032</div>
-		<div class = 'flex-info'>253-886-6635</div>
-	</div>
-	<div class='flex-title'>LAKE STEVENS
-		<div class = 'flex-info'>512 91st Ave NE</div>
-		<div class = 'flex-info'>Lake Stevens 98258</div>
-		<div class = 'flex-info'>425-320-8825</div>
-	</div>
-	<div class='flex-title'>EDMONDS
-		<div class = 'flex-info'>22618 Hwy99 Unit 100</div>
-		<div class = 'flex-info'>Edmonds 98026</div>
-		<div class = 'flex-info'>425-921-6981</div>
-	</div>
-</div>
+  <div class='location-grid'>
+		<div class='flex-title'>KENT
+			<div class = 'flex-info'>6621 S 211th St. </div>
+			<div class = 'flex-info'>Kent 98032</div>
+			<div class = 'flex-info'>253-886-6635</div>
+		</div>
+		<div class='flex-title'>LAKE STEVENS
+			<div class = 'flex-info'>512 91st Ave NE</div>
+			<div class = 'flex-info'>Lake Stevens 98258</div>
+			<div class = 'flex-info'>425-320-8825</div>
+		</div>
+		<div class='flex-title'>EDMONDS
+			<div class = 'flex-info'>22618 Hwy99 Unit 100</div>
+			<div class = 'flex-info'>Edmonds 98026</div>
+			<div class = 'flex-info'>425-921-6981</div>
+		</div>
 
-<div class='flex-row'>
-  <div class='flex-title'>FEDERAL WAY
-	  <div class = 'flex-info'>1096 S 320th St</div>
-	  <div class = 'flex-info'>Federal Way 98003</div>
-	  <div class = 'flex-info'>253-533-3399</div>
-  </div>
-  <div class='flex-title'>GEORGETOWN
-	  <div class = 'flex-info'>6538 4th Ave S</div>
-	  <div class = 'flex-info'>Seattle 98108</div>
-	  <div class = 'flex-info'>206-762-0752</div>
-  </div>
-  <div class='flex-title'>BELLEVUE
-	  <div class = 'flex-info'>12700 SE 38th St.</div>
-	  <div class = 'flex-info'>BELLEVUE 98006</div>
-	  <div class = 'flex-info'>425-971-7228</div>
-  </div>
-</div>
-<div class='parent flex-row'>
-  <div class='flex-title'>LYNNWOOD
-	  <div class = 'flex-info'>3333 184th St. SW</div>
-	  <div class = 'flex-info'>Lynnwood 98037</div>
-	  <div class = 'flex-info'>425-622-4500</div>
-  </div>
-  <div class='flex-title'>CAPITOL HILL
-	  <div class = 'flex-info'>1410 12th Ave.</div>
-	  <div class = 'flex-info'>Seattle 98122</div>
-	  <div class = 'flex-info'>206-941-5317</div>
-  </div>
-  <div class='flex-title'>BALLARD
-	  <div class = 'flex-info'>2034 NW 56th St.</div>
-	  <div class = 'flex-info'>Seattle 98107</div>
-	  <div class = 'flex-info'>206-898-5050</div>
-  </div>
-</div>
+		<div class='flex-title'>FEDERAL WAY
+			<div class = 'flex-info'>1096 S 320th St</div>
+			<div class = 'flex-info'>Federal Way 98003</div>
+			<div class = 'flex-info'>253-533-3399</div>
+		</div>
+		<div class='flex-title'>GEORGETOWN
+			<div class = 'flex-info'>6538 4th Ave S</div>
+			<div class = 'flex-info'>Seattle 98108</div>
+			<div class = 'flex-info'>206-762-0752</div>
+		</div>
+		<div class='flex-title'>BELLEVUE
+			<div class = 'flex-info'>12700 SE 38th St.</div>
+			<div class = 'flex-info'>BELLEVUE 98006</div>
+			<div class = 'flex-info'>425-971-7228</div>
+		</div>
+		<div class='flex-title'>LYNNWOOD
+			<div class = 'flex-info'>3333 184th St. SW</div>
+			<div class = 'flex-info'>Lynnwood 98037</div>
+			<div class = 'flex-info'>425-622-4500</div>
+		</div>
+		<div class='flex-title'>CAPITOL HILL
+			<div class = 'flex-info'>1410 12th Ave.</div>
+			<div class = 'flex-info'>Seattle 98122</div>
+			<div class = 'flex-info'>206-941-5317</div>
+		</div>
+		<div class='flex-title'>BALLARD
+			<div class = 'flex-info'>2034 NW 56th St.</div>
+			<div class = 'flex-info'>Seattle 98107</div>
+			<div class = 'flex-info'>206-898-5050</div>
+		</div>
+	</div>
 
 <img src = "../images/location-map.jpg" alt="map" class="center-map">
 
@@ -94,5 +92,6 @@
       
     </div>
 </div>
+<script src="../app/js/script.js"></script>
 </body>
 </html>

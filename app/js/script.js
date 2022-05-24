@@ -6,9 +6,6 @@ hamburger.addEventListener("click" , () => {
   hamburger.classList.toggle("show");
 });
 
-
-
-
 function scrollToMenu(){
   var element = document.getElementById("menu-anchor");
   element.scrollIntoView({behavior: "smooth"});
