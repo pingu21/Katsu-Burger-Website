@@ -103,6 +103,27 @@ p{
   cursor: pointer;
 }
 
+.error-page{
+  color: black;
+  text-align: center;
+  margin-left: 20px;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 5em;
+  margin:25px 20% 25px 20%
+}
+ 
+.error-page-text{
+  color: black;
+  text-align: center;
+  margin-left: 20px;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3em;
+  margin:25px 20% 25px 20%
+}
 
 
 
