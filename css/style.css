@@ -1,15 +1,22 @@
+@font-face{
+  font-family: "Bebas";
+  src: url("../font/Bebas-Regular.woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   background-color: white;
   margin:0; /*removes padding so that navbar goes to edges */
+  height: 100%;
 }
 
 h1 {
   color: black;
   margin-left: 20px;
-}
-
-h2 {
-	color: black;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 p{
@@ -17,28 +24,50 @@ p{
   margin-right: 500px;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 .navbar{
   width: 100%;
-  margin:0px;
-  padding:0px;
-  height: 64px;
-  background: #C4C4C4;
+  margin:0;
+  padding:0;
+  height: 4rem;
+  background: #dc143c;
   display: flex;
   justify-content: flex-end;
-  align-items:center;
-  
-  
+  align-items:center; 
 }
 
+.logo{
+  background: url(../images/katsu-burger-logo-square.png);
+  background-size: cover;
+  background-position: center;
+  width: 10rem;
+  height: 10rem;
+  margin-right:auto;
+  margin-left:5rem;
+  align-self: flex-start;
+  transition: transform ease 300ms;
+  z-index: 1;
+}
+
+.logo:hover{
+  transform: translateY(1rem) ;
+
+}
+
+
 .navbar-link{
-  font-size: 1.0em;
-  font-weight: 700;
-  padding: 10px;
-  margin:10px;
-  height: 18px;
-  width:9%;
+  font-size: 2rem;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 4rem;
+  vertical-align: middle;
+  height: 4rem;
+  padding-left:1em;
+  padding-right:1em;
   background-color: #dc143c;
   color:white;
   text-align: center;
@@ -50,46 +79,263 @@ p{
   cursor: pointer;
 }
 
+
+
+
+.main-image{
+  background: url(../images/katsu-burger-banner-image.png);
+  background-size: cover;
+  background-position: center center;
+  top:25%;
+  left:25%;
+  height:600px;
+  overflow:hidden;
+}
+
+.order-image-text{
+  color: white;
+  margin-top: 10%;
+  margin:10% auto auto auto;
+  text-align: center;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 8vw;
+}
+
 .home-page-text{
   text-align: center;
+  font-family: "Degular",sans-serif;
   font-size: 1.3em;
   margin:25px 20% 25px 20%;
 }
 
-.online-order-container{
+
+.menu-title{
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  margin:10px auto;
+  text-align: center;
+  width:100%
+}
+
+.menu-container{
+  display: flex;
+  margin:auto;
+  padding:0px;
+  width:65%;
+  justify-content: center;
+  align-items:flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  
+}
+
+.menu-item{
+  height: 500px;
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.menu-item-side{
+  height: 400px;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.page-title{
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  margin:10px auto;
+  text-align: center;
+  width:100%
+}
+
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  padding-left: 13em;
+}
+
+
+.flex-title {
+  flex: 1;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  margin:10px auto;
+  padding: 10px;
+  text-align: left;
+}
+
+.flex-info {
+  flex: 1;
+  font-family: "Degular",sans-serif;
+  font-weight: 500;
+  font-size: .5em;
+  padding:4px;
+  text-align: left;
+}
+
+.center-map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.menu-desc{
+  text-align: center;
+  font-family: "Degular",sans-serif;
+  font-size: 1.3em;
+  margin:5px 5px 5px 5px;
+}
+
+.customer-review-container{
+  display:flex;
+  width:100vw;
+  height: 30rem;
+  justify-content: center;
+}
+
+.review-item{
+  width: 40rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.reviewer-name{
+  text-align: center;
+  width: 100%;
+  font-family: "Degular",sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin:5px auto 5px auto;
+}
+
+
+.review-text{
+  text-align: center;
+  font-family: "Degular",sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin:5px 20px 5px 20px;
+}
+
+.footer{
   position:relative;
-  width:100%;
-  height:600px;
+  min-width: 100%;
+  min-height: 40rem;
+  bottom: 0;
+}
+.footer-container{
+  display:grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  justify-items: center;
+  margin:auto;
+  width: 30rem;
+  height: 15rem;
 }
 
-
-.float-left-child {
-  float: left;
+.break {
+  width: 100%;
+}
+.footer{
+  position:relative;
+  min-width: 100%;
+  min-height: 60rem;
+  bottom: 0;
+}
+.footer-container{
+  display:grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  justify-items: center;
+  margin:auto;
+  width: 30rem;
+  height: 15rem;
 }
 
-
-#order-online-image{
-  width:100%;
-  height:600px;
+.break {
+  width: 100%;
 }
+
+.about-us-content{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.subtitle{
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin:3rem;
+  width:100% 
+}
+
+.about-desc{
+  text-align:left;
+  font-family: "Degular",sans-serif;
+  font-size: 1.3em;
+  margin:3rem;
+}
+
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-type-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer{
+  width: 100%;
+  height:30rem;
+}
+
 
 #order-online-button{
-  position: absolute;
+  position:absolute;
   margin: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  line-height: 25px;
 
   text-decoration: none;
-
-
-
-  font-size: 1.1em;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2em;
   font-weight: 700;
   padding: 20px;
   margin:10px;
   height: 18px;
-  width:9%;
+  min-width: 160px;
   background-color: #dc143c;
   color:white;
   text-align: center;
@@ -101,6 +347,423 @@ p{
   background-color: #f59b9b;
   padding:25px;
   cursor: pointer;
+}
+
+#tokyo-classic-image{
+  background: url(../images/tokyo-classic.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+
+}
+
+#godzilla-attack-image{
+  background: url(../images/godzilla-attack.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#ninja-deluxe-image{
+  background: url(../images/ninja-deluxe.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#katsu-curry-image{
+  background: url(../images/katsu-curry.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#honey-miso-tofu-image{
+  background: url(../images/honey-miso-tofu.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#ohayou-gozaimasu-image{
+  background: url(../images/ohayou-gozaimasu.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#samurai-select-image{
+  background: url(../images/samurai-select.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#wabi-wasabi-image{
+  background: url(../images/wabi-wasabi.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#teriyaki-chicken-image{
+  background: url(../images/teriyaki-chicken.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#tokyo-tower-image{
+  background: url(../images/tokyo-tower.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#mt-fuji-image{
+  background: url(../images/mt.fuji.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  min-width: 300px;
+  background-position: center center;
+}
+
+#sea-salt-fries-image{
+  background: url(../images/sea-salt-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#nori-fries-image{
+  background: url(../images/nori-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+#curry-fries-image{
+  background: url(../images/curry-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+#spice-fries-image{
+  background: url(../images/12-spice-fries.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#banzai-bites-image{
+  background: url(../images/banzai-bites.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+
+#korokke-image{
+  background: url(../images/korokke.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#seaweed-salad-image{
+  background: url(../images/seaweed-salad.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#wasabi-coleslaw-image{
+  background: url(../images/wasabi-coleslaw.png);
+  border: 5px solid #dc143c;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  min-width: 200px;
+  background-position: center center;
+}
+
+#riley-p-image{
+  background: url(../images/riley-p.jpg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+#neal-p-image{
+  background: url(../images/neal-p.jpg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
+#jack-m-image{
+  background: url(../images/jack-m.jpg);
+
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
+
+#jack-m-image{
+  background: url(../images/jack-m.jpg);
+  background-size: cover;
+  margin:0 auto .6rem auto;
+  /* margin-bottom: 0.6rem; */
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  background-position: center center;
+  /* border: 5px solid #dc143c; */
+  border-radius: 50%;
+}
+
+
+#menu-order-online-button{
+  margin: auto;
+  line-height: 25px;
+  flex-basis: 100%;
+
+
+  text-decoration: none;
+  font-family: 'Bebas Neue',sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 20px;
+  height: 18px;
+  min-width: 160px;
+  background-color: #dc143c;
+  color:white;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+#menu-order-online-button:hover{
+  background-color: #f59b9b;
+  padding:25px;
+  cursor: pointer;
+}
+
+#godzilla-image{
+  background: url(../images/godzilla-footer.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#facebook-icon{
+  background: url(../images/facebook-icon-circle.svg);
+  background-size: cover;
+  margin:10px;
+  width:8.3vw;
+  height: 8.3vw;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+#facebook-icon:hover{
+  filter: invert(14%) sepia(94%) saturate(6153%) hue-rotate(343deg) brightness(90%) contrast(90%);
+}
+
+#instagram-icon{
+  background: url(../images/instagram-icon-circle.svg);
+  background-size: cover;
+  margin:10px;
+  width: 8.3vw;
+  height: 8.3vw;
+  grid-column-start: 2;
+  grid-column-end: span 1w;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+#instagram-icon:hover{
+  filter: invert(14%) sepia(94%) saturate(6153%) hue-rotate(343deg) brightness(90%) contrast(90%);
+}
+
+#twitter-icon{
+  background: url(../images/twitter-icon-circle.svg);
+  background-size: cover;
+  margin:10px;
+  width: 8.3vw;
+  height: 8.3vw;
+  /* min-width: 10rem; */
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+
+
+}
+
+#twitter-icon:hover{
+  filter: invert(14%) sepia(94%) saturate(6153%) hue-rotate(343deg) brightness(90%) contrast(90%);
+}
+
+#back-to-top{
+  background: url(../images/arrow-up-circle.svg);
+  background-size: 8.3vw 8.3vw;
+  margin: 0 auto 0 auto;
+  background-repeat: no-repeat;
+  width: 8.3vw;
+  height: 12vw;
+  background-position: center center;
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  transition: transform 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+#back-to-top-text{
+  display:block;
+  font-size:1.3rem;
+  text-align: center;
+  margin:0 auto 0 auto;
+  opacity: 0%;
+  transform: translateY(6rem);
+  transition: all 300ms ease;
+}
+
+#back-to-top:hover{
+  filter: invert(14%) sepia(94%) saturate(6153%) hue-rotate(343deg) brightness(90%) contrast(90%);
+  cursor: pointer;
+}
+
+#back-to-top:hover #back-to-top-text{
+  transform:translateY(0.5rem);
+  opacity: 100%;
+}
+
+
+#about-us-title{
+  font-size: 5rem;
+}
+
+#about-us-image{
+  background:url(../images/about-us-image.png);
+  background-size: cover;
+  width: 50%;
+  height: 50rem;
+}
+
+#about-us-text-box{
+  width: 50%;
+  margin-right: 10px;
+}
+
+#contact-us-title{
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
+#phone-icon{
+  background: url(../images/phone-solid.svg);
+  background-size: cover;
+  height: 3rem;
+  width:3rem;
+  
+}
+
+#email-icon{
+  background: url(../images/envelope-solid.svg);
+  background-size: cover;
+  height: 3rem;
+  width:3rem;
+  
+}
+
+#phone-number{
+  width: auto;
+  margin:.5rem;
+}
+
+#email{
+  width: auto;
+  margin:.5rem;
 }
 
 .error-page{
@@ -125,6 +788,17 @@ p{
   margin:25px 20% 25px 20%
 }
 
+.error-button{
+  background-color: #dc143c;
+  font-size: 3em;
+  padding: 15x;
 
+}
+
+.error-button:hover{
+  background-color: #f59b9b;
+  padding:15px;
+  cursor: pointer;
+}
 
 
