@@ -50,12 +50,13 @@ a{
   align-self: flex-start;
   transition: transform ease 300ms;
   z-index: 1;
-}
+
 
 .logo:hover{
   transform: translateY(1rem) ;
 
 }
+
 
 
 .navbar-link{
@@ -294,6 +295,7 @@ a{
   width:100% 
 }
 
+
 .about-desc{
   text-align:left;
   font-family: "Degular",sans-serif;
@@ -319,6 +321,24 @@ a{
   height:30rem;
 }
 
+
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-type-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer{
+  width: 100%;
+  height:30rem;
+}
 
 #order-online-button{
   position:absolute;
@@ -766,10 +786,39 @@ a{
   margin:.5rem;
 }
 
+.error-page{
+  color: black;
+  text-align: center;
+  margin-left: 20px;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 5em;
+  margin:25px 20% 25px 20%
+}
+ 
+.error-page-text{
+  color: black;
+  text-align: center;
+  margin-left: 20px;
+  font-family: 'Bebas Neue',sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3em;
+  margin:25px 20% 25px 20%
+}
 
+.error-button{
+  background-color: #dc143c;
+  font-size: 1em;
+  padding: 15x;
 
+}
 
-
-
+.error-button:hover{
+  background-color: #f59b9b;
+  padding:15px;
+  cursor: pointer;
+}
 
 
